@@ -1,0 +1,13 @@
+{
+  "required": true,
+  "package": "net.mrpup.mysticshrooms.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "AntiPhantom"
+  ],
+  "client": [
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
