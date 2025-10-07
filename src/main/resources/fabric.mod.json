@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "mystic_shrooms",
+  "version": "1.0.0-fabric-1.21.9",
+  "name": "Mystic Shrooms",
+  "description": "They look delicious, don't they?",
+  "authors": [
+    "MrPup(minecraftkus)"
+  ],
+  "license": "MIT License",
+  "icon": "assets/mystic_shrooms/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "net.mrpup.mysticshrooms.MysticShrooms"
+    ]
+  },
+  "mixins": [
+    "mystic_shrooms.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.16.10",
+    "minecraft": ">=1.21.9 <1.21.10",
+    "java": ">=21",
+    "fabric-api": "*"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
