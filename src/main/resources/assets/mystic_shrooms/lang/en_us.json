@@ -1,10 +1,16 @@
 {
   "block.mystic_shrooms.somnolis": "Somnolis",
   "itemgroup.mystic_shrooms.mystic_shrooms": "Mystic Shrooms",
-  "item.minecraft.potion.effect.somnolence_potion": "Somnolence Potion",
   "block.mystic_shrooms.pale_shroom": "Pale Shroom",
+  "item.minecraft.potion.effect.somnolence_potion": "Somnolence Potion",
   "item.minecraft.potion.effect.cheerfulness_potion": "Cheerfulness Potion",
   "item.minecraft.potion.effect.anti_phantom_potion": "Anti Phantom Potion",
+  "item.minecraft.splash_potion.effect.somnolence_potion": "Somnolence Splash Potion",
+  "item.minecraft.splash_potion.effect.cheerfulness_potion": "Cheerfulness Splash Potion",
+  "item.minecraft.splash_potion.effect.anti_phantom_potion": "Anti Phantom Splash Potion",
+  "item.minecraft.lingering_potion.effect.somnolence_potion": "Somnolence Lingering Potion",
+  "item.minecraft.lingering_potion.effect.cheerfulness_potion": "Cheerfulness Lingering Potion",
+  "item.minecraft.lingering_potion.effect.anti_phantom_potion": "Anti Phantom Lingering Potion",
   "effect.mystic_shrooms.cheerfulness": "Cheerfulness",
   "effect.mystic_shrooms.somnolence": "Somnolence",
   "effect.mystic_shrooms.anti_phantom": "Anti Phantom"
