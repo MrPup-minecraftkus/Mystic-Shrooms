@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "mystic_shrooms:block/pale_shroom",
+      "y": 270
+    },
+    "facing=north": {
+      "model": "mystic_shrooms:block/pale_shroom",
+      "y": 180
+    },
+    "facing=south": {
+      "model": "mystic_shrooms:block/pale_shroom"
+    },
+    "facing=west": {
+      "model": "mystic_shrooms:block/pale_shroom",
+      "y": 90
+    }
+  }
+}
