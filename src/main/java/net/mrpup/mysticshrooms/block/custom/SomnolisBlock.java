@@ -4,7 +4,9 @@ import com.mojang.serialization.MapCodec;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.server.level.ServerLevel;
 import net.minecraft.tags.BlockTags;
+import net.minecraft.util.RandomSource;
 import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.LevelReader;
@@ -62,6 +64,25 @@ public class SomnolisBlock extends HorizontalDirectionalBlock {
         BlockPos supportPos = pos.relative(facing);
         return level.getBlockState(supportPos)
                 .is(BlockTags.create(ResourceLocation.fromNamespaceAndPath("minecraft", "pale_oak_logs")));
+    }
+
+    @Override
+    public BlockState updateShape(BlockState state, LevelReader level, net.minecraft.world.level.ScheduledTickAccess tickAccess,
+                                  BlockPos pos, Direction direction, BlockPos neighborPos, BlockState neighborState, RandomSource random) {
+        if (direction == state.getValue(FACING)) {
+            if (!state.canSurvive(level, pos)) {
+                tickAccess.scheduleTick(pos, this, 1);
+            }
+        }
+
+        return super.updateShape(state, level, tickAccess, pos, direction, neighborPos, neighborState, random);
+    }
+
+    @Override
+    public void tick(BlockState state, ServerLevel level, BlockPos pos, RandomSource random) {
+        if (!state.canSurvive(level, pos)) {
+            level.destroyBlock(pos, true);
+        }
     }
 
 
