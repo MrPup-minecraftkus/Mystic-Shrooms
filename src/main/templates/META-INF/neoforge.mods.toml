@@ -1,0 +1,27 @@
+license="${mod_license}"
+
+[[mods]]
+modId="mystic_shrooms"
+version="1.0.0-neoforge-1.21.5-1.21.10"
+displayName="Mystic Shrooms"
+authors="MrPup(minecraftkus)"
+description='''They look delicious, don't they?'''
+
+logoFile="assets/mystic_shrooms/icon.png"
+
+[[mixins]]
+config="mystic_shrooms.mixins.json"
+
+[[dependencies.mystic_shrooms]]
+modId="neoforge"
+type="required"
+versionRange="[${neo_version},)"
+ordering="NONE"
+side="BOTH"
+
+[[dependencies.mystic_shrooms]]
+modId="minecraft"
+type="required"
+versionRange="[1.21.4, 1.21.10]"
+ordering="NONE"
+side="BOTH"
