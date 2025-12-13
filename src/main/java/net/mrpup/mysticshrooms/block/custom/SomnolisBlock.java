@@ -3,7 +3,7 @@ package net.mrpup.mysticshrooms.block.custom;
 import com.mojang.serialization.MapCodec;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
-import net.minecraft.resources.ResourceLocation;
+import net.minecraft.resources.Identifier;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.util.RandomSource;
@@ -62,7 +62,7 @@ public class SomnolisBlock extends HorizontalDirectionalBlock {
         Direction facing = state.getValue(FACING);
         BlockPos supportPos = pos.relative(facing);
         return level.getBlockState(supportPos)
-                .is(BlockTags.create(ResourceLocation.fromNamespaceAndPath("minecraft", "pale_oak_logs")));
+                .is(BlockTags.create(Identifier.fromNamespaceAndPath("minecraft", "pale_oak_logs")));
     }
 
     @Override

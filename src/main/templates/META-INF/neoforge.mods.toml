@@ -2,7 +2,7 @@ license="${mod_license}"
 
 [[mods]]
 modId="mystic_shrooms"
-version="1.0.0-neoforge-1.21.5-1.21.10"
+version="1.0.0-neoforge-1.21.11"
 displayName="Mystic Shrooms"
 authors="MrPup(minecraftkus)"
 description='''They look delicious, don't they?'''
@@ -22,6 +22,6 @@ side="BOTH"
 [[dependencies.mystic_shrooms]]
 modId="minecraft"
 type="required"
-versionRange="[1.21.4, 1.21.10]"
+versionRange="[1.21.11]"
 ordering="NONE"
 side="BOTH"

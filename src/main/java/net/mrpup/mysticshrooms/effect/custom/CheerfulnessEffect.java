@@ -1,6 +1,6 @@
 package net.mrpup.mysticshrooms.effect.custom;
 
-import net.minecraft.resources.ResourceLocation;
+import net.minecraft.resources.Identifier;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.world.effect.MobEffect;
 import net.minecraft.world.effect.MobEffectCategory;
@@ -17,13 +17,13 @@ public class CheerfulnessEffect extends MobEffect {
         super(category, color);
 
 
-        this.addAttributeModifier(Attributes.MOVEMENT_SPEED, ResourceLocation.fromNamespaceAndPath("mystic_shrooms", "cheerfulness_speed"), 0.20D, AttributeModifier.Operation.ADD_MULTIPLIED_TOTAL);
+        this.addAttributeModifier(Attributes.MOVEMENT_SPEED, Identifier.fromNamespaceAndPath("mystic_shrooms", "cheerfulness_speed"), 0.20D, AttributeModifier.Operation.ADD_MULTIPLIED_TOTAL);
 
-        this.addAttributeModifier(Attributes.MAX_HEALTH, ResourceLocation.fromNamespaceAndPath("mystic_shrooms", "cheerfulness_health"), 4.0D, AttributeModifier.Operation.ADD_VALUE);
+        this.addAttributeModifier(Attributes.MAX_HEALTH, Identifier.fromNamespaceAndPath("mystic_shrooms", "cheerfulness_health"), 4.0D, AttributeModifier.Operation.ADD_VALUE);
 
-        this.addAttributeModifier(Attributes.JUMP_STRENGTH, ResourceLocation.fromNamespaceAndPath("mystic_shrooms", "cheerfulness_jump"), 0.1D, AttributeModifier.Operation.ADD_VALUE);
+        this.addAttributeModifier(Attributes.JUMP_STRENGTH, Identifier.fromNamespaceAndPath("mystic_shrooms", "cheerfulness_jump"), 0.1D, AttributeModifier.Operation.ADD_VALUE);
 
-        this.addAttributeModifier(Attributes.MINING_EFFICIENCY, ResourceLocation.fromNamespaceAndPath("mystic_shrooms", "cheerfulness_mining"), 1.0D, AttributeModifier.Operation.ADD_VALUE);
+        this.addAttributeModifier(Attributes.MINING_EFFICIENCY, Identifier.fromNamespaceAndPath("mystic_shrooms", "cheerfulness_mining"), 1.0D, AttributeModifier.Operation.ADD_VALUE);
     }
 
 

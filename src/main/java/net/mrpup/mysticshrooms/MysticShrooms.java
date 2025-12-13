@@ -1,6 +1,5 @@
 package net.mrpup.mysticshrooms;
 
-import net.minecraft.world.item.*;
 import net.mrpup.mysticshrooms.block.ModBlocks;
 import net.mrpup.mysticshrooms.effect.ModEffects;
 import net.mrpup.mysticshrooms.item.ModItemGroups;
@@ -9,8 +8,8 @@ import net.mrpup.mysticshrooms.potion.ModPotions;
 import net.mrpup.mysticshrooms.world.ModTreeDecorators;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.bus.api.SubscribeEvent;
-import net.neoforged.fml.common.Mod;
 import net.neoforged.fml.ModContainer;
+import net.neoforged.fml.common.Mod;
 import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.neoforged.neoforge.common.NeoForge;
 import net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent;

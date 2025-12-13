@@ -3,11 +3,11 @@ package net.mrpup.mysticshrooms.potion;
 import net.minecraft.core.Holder;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.world.effect.MobEffectInstance;
+import net.minecraft.world.item.alchemy.Potion;
 import net.mrpup.mysticshrooms.MysticShrooms;
 import net.mrpup.mysticshrooms.effect.ModEffects;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredRegister;
-import net.minecraft.world.item.alchemy.Potion;
 
 
 public class ModPotions {
